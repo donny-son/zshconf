@@ -1,0 +1,24 @@
+###zshbase_block_start###
+# set default editor. nvim must be installed
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
+# set theme
+ZSH_THEME="fino"
+
+#######################
+# plugins to insetall.#
+#######################
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# curl https://pyenv.run | bash
+plugins=(git zsh-autosuggestions pyenv)
+
+# pyenv related
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
+eval "$(pyenv init -)"
+
+# aliases
+source $HOME/.config/zshconf/zsh_aliases
+###zshbase_block_end###

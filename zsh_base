@@ -1,4 +1,3 @@
-###zshbase_block_start###
 # set default editor. nvim must be installed
 export VISUAL=nvim
 export EDITOR="$VISUAL"
@@ -21,4 +20,3 @@ eval "$(pyenv init -)"
 
 # aliases
 source $HOME/.config/zshconf/zsh_aliases
-###zshbase_block_end###

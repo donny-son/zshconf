@@ -12,5 +12,5 @@ alias wezconfig="cd ~/.config/wezterm && nvim"
 alias btt="cd ~/Projects/btt && nvim"
 
 # gh repo clone donny-son/brain-copy
-alias bb="cd ~/Projects/btt && nvim"
+alias bb="cd ~/Projects/brain-copy && nvim"
 
